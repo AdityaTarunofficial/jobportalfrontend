@@ -13,7 +13,7 @@ const Register = () => {
   const handleRegister = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/api/users', { username, email, imageUrl });
+      const response = await axios.post('https://jobportalbackend-c2xp.onrender.com/api/users', { username, email, imageUrl });
       alert('Registration successful! You can now log in.');
       setUsername('');
       setEmail('');

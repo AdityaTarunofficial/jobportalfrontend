@@ -17,7 +17,7 @@ const Navbar = () => {
         if (!userId) return; 
 
         try {
-            const response = await fetch(`http://localhost:5000/api/users/${userId}/logout`, {
+            const response = await fetch(`https://jobportalbackend-c2xp.onrender.com/api/users/${userId}/logout`, {
                 method: 'POST',
             });
 

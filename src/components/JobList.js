@@ -6,7 +6,7 @@ const JobList = () => {
 
   useEffect(() => {
     const fetchJobs = async () => {
-      const response = await axios.get('http://localhost:5000/api/jobs');
+      const response = await axios.get('https://jobportalbackend-c2xp.onrender.com/api/jobs');
       setJobs(response.data);
     };
 
@@ -20,7 +20,7 @@ const JobList = () => {
       return;
     }
 
-    await axios.post(`http://localhost:5000/api/jobs/${jobId}/apply`, { userId });
+    await axios.post(`https://jobportalbackend-c2xp.onrender.com/api/jobs/${jobId}/apply`, { userId });
     alert('Applied successfully!');
     window.location.reload(); // Refresh to see updated applied status
   };

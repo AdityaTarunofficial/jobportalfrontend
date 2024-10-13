@@ -9,7 +9,7 @@ const Login = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/api/users/login', { email });
+      const response = await axios.post('https://jobportalbackend-c2xp.onrender.com/api/users/login', { email });
       localStorage.setItem('userId', response.data.id);
       localStorage.setItem('username', response.data.username);
        // Save user ID to local storage

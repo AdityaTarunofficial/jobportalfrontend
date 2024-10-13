@@ -23,7 +23,7 @@ const AdminDashboard = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:5000/api/jobs', jobDetails);
+            const response = await axios.post('https://jobportalbackend-c2xp.onrender.com/api/jobs', jobDetails);
             console.log('Job added:', response.data);
             
             // Reset form

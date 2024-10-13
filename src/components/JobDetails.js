@@ -9,7 +9,7 @@ function JobDetails() {
 
     useEffect(() => {
         const fetchJob = async () => {
-            const response = await axios.get(`http://localhost:5000/api/jobs/${id}`);
+            const response = await axios.get(`https://jobportalbackend-c2xp.onrender.com/api/jobs/${id}`);
             setJob(response.data);
             setApplied(response.data.applied);
         };
@@ -17,7 +17,7 @@ function JobDetails() {
     }, [id]);
 
     const handleApply = async () => {
-        await axios.post(`http://localhost:5000/api/jobs/${id}/apply`);
+        await axios.post(`https://jobportalbackend-c2xp.onrender.com/api/jobs/${id}/apply`);
         setApplied(true);
     };
 

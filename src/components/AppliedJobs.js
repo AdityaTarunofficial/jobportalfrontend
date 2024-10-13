@@ -12,7 +12,7 @@ const AppliedJobs = () => {
         return;
       }
 
-      const response = await axios.get(`http://localhost:5000/api/jobs//applied`);
+      const response = await axios.get(`https://jobportalbackend-c2xp.onrender.com/api/jobs//applied`);
       setAppliedJobs(response.data);
     };
 
@@ -21,7 +21,7 @@ const AppliedJobs = () => {
 
   const handleReject = async (jobId) => {
     // const userId = localStorage.getItem('userId');
-    await axios.post(`http://localhost:5000/api/jobs/${jobId}/reject`);
+    await axios.post(`https://jobportalbackend-c2xp.onrender.com/api/jobs/${jobId}/reject`);
     alert('Application rejected successfully!');
     window.location.reload(); // Reload to see the updated list
   };

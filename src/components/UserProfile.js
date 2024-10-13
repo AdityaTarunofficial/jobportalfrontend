@@ -12,7 +12,7 @@ const UserProfile = () => {
         return;
       }
 
-      const response = await axios.get(`http://localhost:5000/api/users`);
+      const response = await axios.get(`https://jobportalbackend-c2xp.onrender.com/api/users`);
       setUser(response.data);
     };
 
