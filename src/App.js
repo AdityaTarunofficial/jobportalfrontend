@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import JobList from './components/JobList';
+import Login from './components/Login';
+import Register from './components/Register';
+import AppliedJobs from './components/AppliedJobs';
+import UserProfile from './components/UserProfile';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './styles.css';
+import AdminDashboard from './components/AdminDashboard';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<JobList />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/applied-jobs" element={<AppliedJobs />} />
+        <Route path="/user-profile" element={<UserProfile />} />
+        <Route path="/admin-dashboard" element={<AdminDashboard/>} />
+      </Routes>
     </div>
   );
-}
+};
 
 export default App;
