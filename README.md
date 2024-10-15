@@ -3,6 +3,12 @@
 ### Overview
 The **frontend** of the Job Portal Application is built using **React**, providing a modern and responsive user interface. It allows job seekers and employers to interact with the platform, enabling users to search for jobs, apply, and manage profiles, while employers can post and manage job listings.
 
+
+## 🌐 **Live Demo**
+Check out the live version of the chatbot here:  
+[**Hosted Chatbot Website**](https://jobportalats.vercel.app/)
+))
+
 ### 🛠️ Key Technologies
 - **React.js**: Component-based UI framework to create interactive and efficient user interfaces.
 - **React Router**: Provides routing and navigation across different pages of the application.
