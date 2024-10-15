@@ -34,9 +34,20 @@ Add screenshots for key features (login page, job listing, profile management, e
 1. Create a folder named `screenshots` in the project root.
 2. Capture screenshots of key pages or features.
 3. Add the following markdown to reference them:
-   ```markdown
-   ![Job Listing](screenshots/job-listing.png)
-   ![Profile Management](screenshots/profile-management.png)
+   ## Screenshots
+
+### Applied Jobs Page
+![Applied Jobs](./Appliedjobs.png)
+
+### Job Listings Page
+![Job Listings](./joblistings.png)
+
+### User Profile Page
+![User Profile](./userprofile.png)
+
+### Admin Portal Page
+![Admin Portal](./adminportal.png)
+
 🚀 Getting Started (Frontend)
 Prerequisites
 Node.js and npm installed.
