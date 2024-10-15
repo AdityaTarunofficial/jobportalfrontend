@@ -6,7 +6,7 @@ The **frontend** of the Job Portal Application is built using **React**, providi
 
 ## 🌐 **Live Demo**
 Check out the live version of the chatbot here:  
-[**Hosted Chatbot Website**](https://jobportalats.vercel.app/)
+[**Hosted Website**](https://jobportalats.vercel.app/)
 ))
 
 ### 🛠️ Key Technologies
