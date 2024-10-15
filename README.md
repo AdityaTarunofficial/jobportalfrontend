@@ -1,51 +1,48 @@
-# Job Portal Application
 
-## Overview
-The Job Portal Application is a full-stack web application that connects job seekers with potential employers. Users can register, log in, apply for jobs, and manage their profiles. Employers can post jobs and manage applications.
+---
 
-## Technologies Used
-- **Frontend**: 
-  - React
-  - Axios for API requests
-  - React Router for navigation
-  - Bootstrap for styling
-- **Backend**: 
-  - Node.js
-  - Express
-  - MongoDB for database management
-- **Deployment**: 
-  - Render (for backend)
-  - Netlify (for frontend)
+### Frontend ReadMe Section
 
-## Features
-- User Authentication:
-  - Registration and login for job seekers.
-  - Secure password storage and management.
+```markdown
+# 💻 Frontend
+
+### Overview
+The **frontend** of the Job Portal is built using **React**, providing users with a smooth and interactive interface for job searching, applying, and managing their profiles.
+
+### 🛠️ Key Technologies
+- **React**: For building the user interface.
+- **Axios**: For making HTTP requests to the backend API.
+- **React Router**: For navigation between different pages.
+- **Bootstrap**: For responsive and modern design components.
+
+### Features
+- **Authentication & Authorization**: 
+  - Registration and login forms.
+  - Protected routes for logged-in users.
   
-- Job Management:
-  - Employers can create, read, update, and delete job listings.
-  - Job seekers can view job listings and apply directly through the platform.
+- **Job Listings**:
+  - View all job listings.
+  - Apply to jobs with a single click.
 
-- Profile Management:
-  - Users can view and edit their profiles.
-  - Option to upload a profile picture.
+- **Profile Management**:
+  - View and update user profiles.
+  - Upload a profile picture.
 
-- Applied Jobs Tracking:
-  - Users can view jobs they have applied for.
-  - Ability to reject applications.
+- **Job Application Tracking**: 
+  - Track applied jobs.
+  - Reject applications.
 
-- Responsive Design:
-  - User-friendly interface that works on both desktop and mobile devices.
+### Pages
 
-## Getting Started
+- **Login**: User login page with form validation.
+- **Register**: User registration page.
+- **Job Listings**: Displays available job listings fetched from the backend.
+- **Profile**: Displays and allows users to update their profile.
+- **Admin Dashboard**: Special page for managing job posts (Admin only).
 
-### Prerequisites
-- Node.js installed on your machine.
-- MongoDB database setup.
+### Installation & Setup
 
-### Installation
-
-1. **Clone the repository**
+1. **Clone the frontend repository:**
    ```bash
-   git clone https://github.com/yourusername/job-portal.git
-   cd job-portal
+   git clone https://github.com/yourusername/job-portal-frontend.git
+   cd job-portal-frontend
